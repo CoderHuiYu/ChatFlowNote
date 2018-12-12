@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZLChatFlowProgressView" customModule="Zilly" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="BTY-OW-o9G" id="MKN-MM-0Jy"/>
+                <outlet property="progressView" destination="j3S-L6-41y" id="fv2-Zr-zhI"/>
+                <outlet property="tellusCashImageView" destination="hzX-f0-qnL" id="1rd-1v-tqq"/>
+                <outlet property="tellusCashLabel" destination="Qpf-OX-kfo" id="pCW-Th-d0c"/>
+                <outlet property="titleLabel" destination="piy-fW-0Uz" id="eQJ-iv-7V0"/>
+                <outlet property="undoButton" destination="ARX-Cw-7PH" id="Xb7-xH-ucj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="BTY-OW-o9G">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="98"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MNW-A2-x1y" userLabel="Status Bar">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="1jK-EI-XDq"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="nFF-Ak-pIi">
+                    <rect key="frame" x="16" y="32" width="343" height="50"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O5F-NN-rWo">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="22"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARX-Cw-7PH">
+                                    <rect key="frame" x="0.0" y="0.0" width="35" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="fyD-dU-52A"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                    <state key="normal" title="Undo">
+                                        <color key="titleColor" red="0.094117647060000004" green="0.67450980390000004" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="handleUndoButtonPressed" destination="-1" eventType="touchUpInside" id="rzc-WR-2Gh"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rsD-B6-Df6">
+                                    <rect key="frame" x="35" y="0.0" width="123.5" height="22"/>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piy-fW-0Uz" customClass="ZLLabel">
+                                    <rect key="frame" x="158.5" y="0.0" width="26.5" height="22"/>
+                                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="14"/>
+                                    <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wv5-aq-zF2">
+                                    <rect key="frame" x="185" y="0.0" width="120" height="22"/>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Lva-sc-Xot">
+                                    <rect key="frame" x="305" y="0.0" width="38" height="22"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qpf-OX-kfo" customClass="ZLLabel">
+                                            <rect key="frame" x="0.0" y="0.0" width="8" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="Q9H-4o-5TX"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                            <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telluscash-circled-16" translatesAutoresizingMaskIntoConstraints="NO" id="hzX-f0-qnL">
+                                            <rect key="frame" x="16" y="0.0" width="22" height="22"/>
+                                            <color key="tintColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="xNd-Tc-boA"/>
+                                                <constraint firstAttribute="width" constant="22" id="zJc-0W-20g"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="autoAdjustsTintColor" value="NO"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="patchTintColor" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="piy-fW-0Uz" firstAttribute="centerX" secondItem="O5F-NN-rWo" secondAttribute="centerX" id="hp0-VQ-Ixf"/>
+                            </constraints>
+                        </stackView>
+                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="j3S-L6-41y">
+                            <rect key="frame" x="0.0" y="38" width="343" height="12"/>
+                            <color key="tintColor" red="0.0" green="0.43137254899999999" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="12" id="jyb-jU-duA"/>
+                            </constraints>
+                            <color key="progressTintColor" red="0.0" green="0.43137254899999999" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="trackTintColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </progressView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MNW-A2-x1y" firstAttribute="top" secondItem="BTY-OW-o9G" secondAttribute="top" id="0YF-6D-Le3"/>
+                <constraint firstItem="MNW-A2-x1y" firstAttribute="leading" secondItem="BTY-OW-o9G" secondAttribute="leading" id="6mn-om-w6B"/>
+                <constraint firstAttribute="trailing" secondItem="MNW-A2-x1y" secondAttribute="trailing" id="A7x-I0-qFs"/>
+                <constraint firstAttribute="trailing" secondItem="nFF-Ak-pIi" secondAttribute="trailing" constant="16" id="OFQ-kx-dUl"/>
+                <constraint firstItem="nFF-Ak-pIi" firstAttribute="top" secondItem="MNW-A2-x1y" secondAttribute="bottom" constant="12" id="WsZ-JS-ib2"/>
+                <constraint firstItem="nFF-Ak-pIi" firstAttribute="leading" secondItem="BTY-OW-o9G" secondAttribute="leading" constant="16" id="ihP-JO-dqp"/>
+                <constraint firstAttribute="bottom" secondItem="nFF-Ak-pIi" secondAttribute="bottom" constant="16" id="rot-J7-wF8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="telluscash-circled-16" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZLOnboardingProgressView" customModule="Zilly" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oqo-4G-SMe" userLabel="Status Bar">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="2uJ-H7-12X"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Sqk-n6-XRE">
+                    <rect key="frame" x="0.0" y="32" width="375" height="38"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Rbd-OJ-nkV">
+                            <rect key="frame" x="16" y="0.0" width="343" height="22"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4qa-g3-Gap">
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="22"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ok-6F-BUU">
+                                            <rect key="frame" x="0.0" y="0.0" width="35" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="pgx-NP-F5T"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                            <state key="normal" title="Undo">
+                                                <color key="titleColor" red="0.094117647060000004" green="0.67450980390000004" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="handleUndoButtonPressed" destination="iN0-l3-epB" eventType="touchUpInside" id="UKG-nF-chI"/>
+                                            </connections>
+                                        </button>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yWk-oe-wFG">
+                                            <rect key="frame" x="35" y="0.0" width="102" height="22"/>
+                                        </view>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="tellus-black-22" translatesAutoresizingMaskIntoConstraints="NO" id="mJP-GT-iue">
+                                            <rect key="frame" x="137" y="0.0" width="69" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="9dX-Qz-FIn"/>
+                                                <constraint firstAttribute="width" constant="69" id="WIf-zS-hzf"/>
+                                            </constraints>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HvG-WH-pZg">
+                                            <rect key="frame" x="206" y="0.0" width="85.5" height="22"/>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="748" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fs8-9a-t6Q">
+                                            <rect key="frame" x="291.5" y="0.0" width="51.5" height="22"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o13-N3-87G" customClass="ZLLabel">
+                                                    <rect key="frame" x="0.0" y="0.0" width="27.5" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="J3j-RI-jG7"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                                    <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" image="telluscash-circled-16" translatesAutoresizingMaskIntoConstraints="NO" id="Szm-WT-XzA">
+                                                    <rect key="frame" x="35.5" y="0.0" width="16" height="22"/>
+                                                    <color key="tintColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="patchTintColor" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="autoAdjustsTintColor" value="NO"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="mJP-GT-iue" firstAttribute="centerX" secondItem="4qa-g3-Gap" secondAttribute="centerX" id="zdE-h4-Zhf"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4uF-fG-dnL" userLabel="Spacing">
+                            <rect key="frame" x="67.5" y="22" width="240" height="12"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="12" id="XIb-QC-AVI"/>
+                            </constraints>
+                        </view>
+                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="Bc0-XD-m4S">
+                            <rect key="frame" x="0.0" y="34" width="375" height="4"/>
+                            <color key="tintColor" red="0.0" green="0.43137254899999999" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="4" id="cRf-zB-rcY"/>
+                            </constraints>
+                            <color key="progressTintColor" red="0.0" green="0.43137254899999999" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="trackTintColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </progressView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Rbd-OJ-nkV" secondAttribute="trailing" constant="16" id="1EP-8D-Rl3"/>
+                        <constraint firstItem="Rbd-OJ-nkV" firstAttribute="leading" secondItem="Sqk-n6-XRE" secondAttribute="leading" constant="16" id="c2o-KT-hFw"/>
+                        <constraint firstItem="Bc0-XD-m4S" firstAttribute="width" secondItem="Sqk-n6-XRE" secondAttribute="width" id="rjd-Mv-JYb"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Sqk-n6-XRE" secondAttribute="trailing" id="7Cq-dZ-zr3"/>
+                <constraint firstItem="oqo-4G-SMe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="8TX-mX-glY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oqo-4G-SMe" secondAttribute="trailing" id="b76-Rn-qbj"/>
+                <constraint firstItem="Sqk-n6-XRE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="lpw-Iq-p56"/>
+                <constraint firstItem="oqo-4G-SMe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pIl-d1-dyv"/>
+                <constraint firstItem="Sqk-n6-XRE" firstAttribute="top" secondItem="oqo-4G-SMe" secondAttribute="bottom" constant="12" id="pQH-hE-gtP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Sqk-n6-XRE" secondAttribute="bottom" id="tbw-7n-bdx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="progressView" destination="Bc0-XD-m4S" id="RfL-KS-peQ"/>
+                <outlet property="progressViewHeightConstraint" destination="cRf-zB-rcY" id="Z7J-0j-94V"/>
+                <outlet property="tellusCashImageView" destination="Szm-WT-XzA" id="qBD-Ln-tdK"/>
+                <outlet property="tellusCashLabel" destination="o13-N3-87G" id="uRj-QG-qzs"/>
+                <outlet property="undoButton" destination="0ok-6F-BUU" id="rQU-D1-WAy"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="tellus-black-22" width="69" height="22"/>
+        <image name="telluscash-circled-16" width="16" height="16"/>
+    </resources>
+</document>

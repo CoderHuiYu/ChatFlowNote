@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZLChatNumberEditorView" customModule="Zilly" customModuleProvider="target">
+            <connections>
+                <outlet property="textField" destination="UAL-FC-CI9" id="FpL-62-Oby"/>
+                <outlet property="titleLabel" destination="YXx-Yg-hxX" id="aBa-sS-bcw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2Fm-Hf-rGR">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="e6M-Vg-rCE">
+                    <rect key="frame" x="16" y="16" width="343" height="62"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$1,200,000" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UAL-FC-CI9">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="36"/>
+                            <color key="tintColor" red="0.094117647060000004" green="0.67450980390000004" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="Pyf-XC-kfn"/>
+                            </constraints>
+                            <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="24"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXx-Yg-hxX" customClass="ZLLabel">
+                            <rect key="frame" x="0.0" y="44" width="343" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="PUd-kD-jqZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
+                            <color key="textColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="e6M-Vg-rCE" firstAttribute="leading" secondItem="bof-wq-eUb" secondAttribute="leading" constant="16" id="KiC-uY-Fdy"/>
+                <constraint firstItem="e6M-Vg-rCE" firstAttribute="top" secondItem="2Fm-Hf-rGR" secondAttribute="top" constant="16" id="fQk-OR-ThF"/>
+                <constraint firstItem="bof-wq-eUb" firstAttribute="trailing" secondItem="e6M-Vg-rCE" secondAttribute="trailing" constant="16" id="hJ6-eH-ftd"/>
+                <constraint firstAttribute="bottom" secondItem="e6M-Vg-rCE" secondAttribute="bottom" constant="16" id="kPv-br-cf5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="bof-wq-eUb"/>
+        </view>
+    </objects>
+</document>

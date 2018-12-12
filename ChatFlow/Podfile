@@ -1,0 +1,7 @@
+platform :ios, '10.0'
+use_frameworks!
+inhibit_all_warnings!
+
+target 'ChatFlow' do
+  pod 'pop', '~> 1.0'
+end

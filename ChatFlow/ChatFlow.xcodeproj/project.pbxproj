@@ -1,0 +1,835 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3571B0CF7EC1BD59B825605E /* Pods_ChatFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A3A7E8015FCD0E5B3C8C02 /* Pods_ChatFlow.framework */; };
+		CD7610CE21B1DE2200A3A2EF /* ZLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7610CB21B1DE2200A3A2EF /* ZLViewController.swift */; };
+		CD7610CF21B1DE2200A3A2EF /* ZLNavBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7610CC21B1DE2200A3A2EF /* ZLNavBarStyle.swift */; };
+		CD7610D021B1DE2200A3A2EF /* ZLNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7610CD21B1DE2200A3A2EF /* ZLNavigationController.swift */; };
+		CD7610D221B1DE4D00A3A2EF /* ObserverCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7610D121B1DE4D00A3A2EF /* ObserverCollection.swift */; };
+		CD7610D421B1DECA00A3A2EF /* UIDevice+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7610D321B1DECA00A3A2EF /* UIDevice+Utilities.swift */; };
+		CD7610D821B1DF1800A3A2EF /* ZLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7610D621B1DF1800A3A2EF /* ZLLabel.m */; };
+		CD7610D921B1DF1800A3A2EF /* ZLLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7610D721B1DF1800A3A2EF /* ZLLabel.swift */; };
+		CD7610DE21B1DF7600A3A2EF /* Comparable+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7610DB21B1DF7600A3A2EF /* Comparable+Utilities.swift */; };
+		CD7610DF21B1DF7600A3A2EF /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7610DC21B1DF7600A3A2EF /* Geometry.swift */; };
+		CD7610E021B1DF7600A3A2EF /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7610DD21B1DF7600A3A2EF /* Math.swift */; };
+		CD7610E721B1E01C00A3A2EF /* ZLDismissalInputAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7610E521B1E01C00A3A2EF /* ZLDismissalInputAccessory.m */; };
+		CD7610E821B1E01C00A3A2EF /* ZLDismissalInputAccessory.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD7610E621B1E01C00A3A2EF /* ZLDismissalInputAccessory.xib */; };
+		CD7610EA21B1E06500A3A2EF /* String+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7610E921B1E06500A3A2EF /* String+Helper.swift */; };
+		CD7610F821B1E1C100A3A2EF /* Dictionary+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7610EE21B1E1C000A3A2EF /* Dictionary+Utilities.swift */; };
+		CD7610FC21B1E1C100A3A2EF /* KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7610F221B1E1C000A3A2EF /* KeyPath.swift */; };
+		CD7610FE21B1E1C100A3A2EF /* JSONValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7610F421B1E1C100A3A2EF /* JSONValue.swift */; };
+		CD7610FF21B1E1C100A3A2EF /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7610F521B1E1C100A3A2EF /* Environment.swift */; };
+		CD76110021B1E1C100A3A2EF /* GlobalUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7610F621B1E1C100A3A2EF /* GlobalUtilities.swift */; };
+		CD76110221B1E3BC00A3A2EF /* ZLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD76110121B1E3BC00A3A2EF /* ZLConstants.swift */; };
+		CD76110421B1E40400A3A2EF /* UIView+IBInspectables.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD76110321B1E40400A3A2EF /* UIView+IBInspectables.swift */; };
+		CD76110721B1E49700A3A2EF /* ZLOnboardingProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD76110521B1E49700A3A2EF /* ZLOnboardingProgressView.swift */; };
+		CD76110821B1E49700A3A2EF /* ZLOnboardingProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD76110621B1E49700A3A2EF /* ZLOnboardingProgressView.xib */; };
+		CD76110B21B1E4A900A3A2EF /* ZLAdventureProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD76110921B1E4A800A3A2EF /* ZLAdventureProgressView.xib */; };
+		CD76110C21B1E4A900A3A2EF /* ZLAdventureProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD76110A21B1E4A800A3A2EF /* ZLAdventureProgressView.swift */; };
+		CD76110E21B1E53600A3A2EF /* ZLProminentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD76110D21B1E53600A3A2EF /* ZLProminentButton.swift */; };
+		CD76111121B1E54A00A3A2EF /* ZLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CD76110F21B1E54900A3A2EF /* ZLButton.m */; };
+		CD76111621B1E5D800A3A2EF /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD76111521B1E5D800A3A2EF /* GlobalFunctions.swift */; };
+		CD76111821B1E69500A3A2EF /* NSLayoutConstraint+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD76111721B1E69500A3A2EF /* NSLayoutConstraint+Utilities.swift */; };
+		CD76111B21B1E71900A3A2EF /* ZLGlobalFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = CD76111921B1E71800A3A2EF /* ZLGlobalFunctions.m */; };
+		CD76111D21B1E7A300A3A2EF /* ZLGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD76111C21B1E7A300A3A2EF /* ZLGradientView.swift */; };
+		CD76111F21B1E7B500A3A2EF /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD76111E21B1E7B500A3A2EF /* UIView+Constraints.swift */; };
+		CD76112121B1E7E500A3A2EF /* UIResponder+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD76112021B1E7E500A3A2EF /* UIResponder+Utilities.swift */; };
+		CD76112421B1E80700A3A2EF /* UIResponder+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CD76112321B1E80700A3A2EF /* UIResponder+Utilities.m */; };
+		CD76112621B1E83400A3A2EF /* NSObject+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD76112521B1E83400A3A2EF /* NSObject+Helper.swift */; };
+		CD76112821B1E85100A3A2EF /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD76112721B1E85100A3A2EF /* KeyboardObserver.swift */; };
+		CD76112A21B1E88400A3A2EF /* Observers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD76112921B1E88400A3A2EF /* Observers.swift */; };
+		CD76112C21B1E89800A3A2EF /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD76112B21B1E89800A3A2EF /* Event.swift */; };
+		CD76112E21B1E8B100A3A2EF /* ZLAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD76112D21B1E8B100A3A2EF /* ZLAccessoryView.swift */; };
+		CD76113021B1E8F300A3A2EF /* ZLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD76112F21B1E8F300A3A2EF /* ZLButton.swift */; };
+		CD76113321B1E91900A3A2EF /* UIViewController+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = CD76113121B1E91800A3A2EF /* UIViewController+Helper.m */; };
+		CD76113621B1E97B00A3A2EF /* ZLConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = CD76113521B1E97B00A3A2EF /* ZLConstants.m */; };
+		CDA2FB5121B0EFF200027DAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2FB5021B0EFF200027DAC /* AppDelegate.swift */; };
+		CDA2FB5321B0EFF200027DAC /* ZLSampleChatFlowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2FB5221B0EFF200027DAC /* ZLSampleChatFlowVC.swift */; };
+		CDA2FB5621B0EFF200027DAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDA2FB5421B0EFF200027DAC /* Main.storyboard */; };
+		CDA2FB5821B0EFF300027DAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDA2FB5721B0EFF300027DAC /* Assets.xcassets */; };
+		CDA2FB5B21B0EFF300027DAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDA2FB5921B0EFF300027DAC /* LaunchScreen.storyboard */; };
+		CDA2FB6D21B0F01C00027DAC /* ZLChatFlowMessageStackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDA2FB6221B0F01B00027DAC /* ZLChatFlowMessageStackView.xib */; };
+		CDA2FB6E21B0F01C00027DAC /* ZLChatFlowProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDA2FB6321B0F01B00027DAC /* ZLChatFlowProgressView.xib */; };
+		CDA2FB6F21B0F01C00027DAC /* ZLChatFlowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2FB6421B0F01B00027DAC /* ZLChatFlowVC.swift */; };
+		CDA2FB7021B0F01C00027DAC /* ZLChatFlowParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2FB6521B0F01B00027DAC /* ZLChatFlowParameters.swift */; };
+		CDA2FB7121B0F01C00027DAC /* ZLChatFlowVC+State.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2FB6621B0F01C00027DAC /* ZLChatFlowVC+State.swift */; };
+		CDA2FB7221B0F01C00027DAC /* ZLChatInfoMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2FB6721B0F01C00027DAC /* ZLChatInfoMessageView.swift */; };
+		CDA2FB7321B0F01C00027DAC /* ZLChatNumberEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2FB6821B0F01C00027DAC /* ZLChatNumberEditorView.swift */; };
+		CDA2FB7421B0F01C00027DAC /* ZLChatNumberEditorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDA2FB6921B0F01C00027DAC /* ZLChatNumberEditorView.xib */; };
+		CDA2FB7521B0F01C00027DAC /* ZLChatFlowProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2FB6A21B0F01C00027DAC /* ZLChatFlowProgressView.swift */; };
+		CDA2FB7621B0F01C00027DAC /* ZLChatFlowMessageStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2FB6B21B0F01C00027DAC /* ZLChatFlowMessageStackView.swift */; };
+		CDA2FB7721B0F01C00027DAC /* ZLChatStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2FB6C21B0F01C00027DAC /* ZLChatStackView.swift */; };
+		CDA2FB7C21B0F54000027DAC /* UIStackView+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2FB7B21B0F54000027DAC /* UIStackView+Utilities.swift */; };
+		CDA2FB7E21B0F56100027DAC /* UIView+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2FB7D21B0F56100027DAC /* UIView+Utilities.swift */; };
+		CDA2FB8021B0F5CB00027DAC /* GeneralUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2FB7F21B0F5CB00027DAC /* GeneralUtilities.swift */; };
+		CDA2FB8221B0F67C00027DAC /* Sequence+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2FB8121B0F67C00027DAC /* Sequence+Utilities.swift */; };
+		CDA2FB8521B0F6E700027DAC /* ZLFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2FB8421B0F6E700027DAC /* ZLFont.swift */; };
+		CDA2FB8721B0F6F600027DAC /* ZLColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2FB8621B0F6F600027DAC /* ZLColor.swift */; };
+		CDA2FB8E21B0F75300027DAC /* ZLStringEditor+Presets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2FB8921B0F75300027DAC /* ZLStringEditor+Presets.swift */; };
+		CDA2FB8F21B0F75300027DAC /* ZLNumberEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2FB8A21B0F75300027DAC /* ZLNumberEditor.swift */; };
+		CDA2FB9221B0F75300027DAC /* ZLStringEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2FB8D21B0F75300027DAC /* ZLStringEditor.swift */; };
+		CDA2FB9621B0F7E600027DAC /* UIView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA2FB9521B0F7E600027DAC /* UIView+Helper.m */; };
+		CDA2FB9A21B0F8F100027DAC /* NSString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA2FB9921B0F8F100027DAC /* NSString+Helper.m */; };
+		F317578921B35D38001025EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F317578821B35D38001025EE /* ViewController.swift */; };
+		F317579221B35E39001025EE /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F317578B21B35E39001025EE /* OpenSans-Italic.ttf */; };
+		F317579321B35E39001025EE /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F317578C21B35E39001025EE /* OpenSans-SemiBoldItalic.ttf */; };
+		F317579421B35E39001025EE /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F317578D21B35E39001025EE /* OpenSans-BoldItalic.ttf */; };
+		F317579521B35E39001025EE /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F317578E21B35E39001025EE /* OpenSans-Regular.ttf */; };
+		F317579621B35E39001025EE /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F317578F21B35E39001025EE /* OpenSans-ExtraBoldItalic.ttf */; };
+		F317579721B35E39001025EE /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F317579021B35E39001025EE /* OpenSans-LightItalic.ttf */; };
+		F317579821B35E39001025EE /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F317579121B35E39001025EE /* OpenSans-SemiBold.ttf */; };
+		F317579A21B35EC2001025EE /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F317579921B35EC2001025EE /* OpenSans-Bold.ttf */; };
+		F36C81D121B1F66E00C50451 /* CGGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = F36C81CF21B1F66E00C50451 /* CGGeometry.m */; };
+		F36C81D421B1FA8900C50451 /* NSObject+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = F36C81D221B1FA8900C50451 /* NSObject+Helper.m */; };
+		F36C81D721B1FB7200C50451 /* TargetActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36C81D621B1FB7200C50451 /* TargetActionHandler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06DCA643B6D93A20868C1A5D /* Pods-ChatFlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatFlow.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatFlow/Pods-ChatFlow.release.xcconfig"; sourceTree = "<group>"; };
+		20A3A7E8015FCD0E5B3C8C02 /* Pods_ChatFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A27BF89869C3742F354612E /* Pods-ChatFlow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatFlow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatFlow/Pods-ChatFlow.debug.xcconfig"; sourceTree = "<group>"; };
+		CD7610CB21B1DE2200A3A2EF /* ZLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLViewController.swift; sourceTree = "<group>"; };
+		CD7610CC21B1DE2200A3A2EF /* ZLNavBarStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLNavBarStyle.swift; sourceTree = "<group>"; };
+		CD7610CD21B1DE2200A3A2EF /* ZLNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLNavigationController.swift; sourceTree = "<group>"; };
+		CD7610D121B1DE4D00A3A2EF /* ObserverCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverCollection.swift; sourceTree = "<group>"; };
+		CD7610D321B1DECA00A3A2EF /* UIDevice+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Utilities.swift"; sourceTree = "<group>"; };
+		CD7610D521B1DF1800A3A2EF /* ZLLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLLabel.h; sourceTree = "<group>"; };
+		CD7610D621B1DF1800A3A2EF /* ZLLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLLabel.m; sourceTree = "<group>"; };
+		CD7610D721B1DF1800A3A2EF /* ZLLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLLabel.swift; sourceTree = "<group>"; };
+		CD7610DB21B1DF7600A3A2EF /* Comparable+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Comparable+Utilities.swift"; sourceTree = "<group>"; };
+		CD7610DC21B1DF7600A3A2EF /* Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		CD7610DD21B1DF7600A3A2EF /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		CD7610E421B1E01C00A3A2EF /* ZLDismissalInputAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLDismissalInputAccessory.h; sourceTree = "<group>"; };
+		CD7610E521B1E01C00A3A2EF /* ZLDismissalInputAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLDismissalInputAccessory.m; sourceTree = "<group>"; };
+		CD7610E621B1E01C00A3A2EF /* ZLDismissalInputAccessory.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZLDismissalInputAccessory.xib; sourceTree = "<group>"; };
+		CD7610E921B1E06500A3A2EF /* String+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Helper.swift"; sourceTree = "<group>"; };
+		CD7610EE21B1E1C000A3A2EF /* Dictionary+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Utilities.swift"; sourceTree = "<group>"; };
+		CD7610F221B1E1C000A3A2EF /* KeyPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPath.swift; sourceTree = "<group>"; };
+		CD7610F421B1E1C100A3A2EF /* JSONValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONValue.swift; sourceTree = "<group>"; };
+		CD7610F521B1E1C100A3A2EF /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		CD7610F621B1E1C100A3A2EF /* GlobalUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalUtilities.swift; sourceTree = "<group>"; };
+		CD76110121B1E3BC00A3A2EF /* ZLConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLConstants.swift; sourceTree = "<group>"; };
+		CD76110321B1E40400A3A2EF /* UIView+IBInspectables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+IBInspectables.swift"; sourceTree = "<group>"; };
+		CD76110521B1E49700A3A2EF /* ZLOnboardingProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLOnboardingProgressView.swift; sourceTree = "<group>"; };
+		CD76110621B1E49700A3A2EF /* ZLOnboardingProgressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZLOnboardingProgressView.xib; sourceTree = "<group>"; };
+		CD76110921B1E4A800A3A2EF /* ZLAdventureProgressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZLAdventureProgressView.xib; sourceTree = "<group>"; };
+		CD76110A21B1E4A800A3A2EF /* ZLAdventureProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLAdventureProgressView.swift; sourceTree = "<group>"; };
+		CD76110D21B1E53600A3A2EF /* ZLProminentButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLProminentButton.swift; sourceTree = "<group>"; };
+		CD76110F21B1E54900A3A2EF /* ZLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLButton.m; sourceTree = "<group>"; };
+		CD76111021B1E54900A3A2EF /* ZLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLButton.h; sourceTree = "<group>"; };
+		CD76111521B1E5D800A3A2EF /* GlobalFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
+		CD76111721B1E69500A3A2EF /* NSLayoutConstraint+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Utilities.swift"; sourceTree = "<group>"; };
+		CD76111921B1E71800A3A2EF /* ZLGlobalFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLGlobalFunctions.m; sourceTree = "<group>"; };
+		CD76111A21B1E71900A3A2EF /* ZLGlobalFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLGlobalFunctions.h; sourceTree = "<group>"; };
+		CD76111C21B1E7A300A3A2EF /* ZLGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLGradientView.swift; sourceTree = "<group>"; };
+		CD76111E21B1E7B500A3A2EF /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		CD76112021B1E7E500A3A2EF /* UIResponder+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+Utilities.swift"; sourceTree = "<group>"; };
+		CD76112221B1E80700A3A2EF /* UIResponder+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Utilities.h"; sourceTree = "<group>"; };
+		CD76112321B1E80700A3A2EF /* UIResponder+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Utilities.m"; sourceTree = "<group>"; };
+		CD76112521B1E83400A3A2EF /* NSObject+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Helper.swift"; sourceTree = "<group>"; };
+		CD76112721B1E85100A3A2EF /* KeyboardObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
+		CD76112921B1E88400A3A2EF /* Observers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observers.swift; sourceTree = "<group>"; };
+		CD76112B21B1E89800A3A2EF /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		CD76112D21B1E8B100A3A2EF /* ZLAccessoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLAccessoryView.swift; sourceTree = "<group>"; };
+		CD76112F21B1E8F300A3A2EF /* ZLButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLButton.swift; sourceTree = "<group>"; };
+		CD76113121B1E91800A3A2EF /* UIViewController+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Helper.m"; sourceTree = "<group>"; };
+		CD76113221B1E91900A3A2EF /* UIViewController+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Helper.h"; sourceTree = "<group>"; };
+		CD76113421B1E97B00A3A2EF /* ZLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLConstants.h; sourceTree = "<group>"; };
+		CD76113521B1E97B00A3A2EF /* ZLConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLConstants.m; sourceTree = "<group>"; };
+		CDA2FB4D21B0EFF200027DAC /* ChatFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDA2FB5021B0EFF200027DAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CDA2FB5221B0EFF200027DAC /* ZLSampleChatFlowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLSampleChatFlowVC.swift; sourceTree = "<group>"; };
+		CDA2FB5521B0EFF200027DAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CDA2FB5721B0EFF300027DAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDA2FB5A21B0EFF300027DAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CDA2FB5C21B0EFF300027DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDA2FB6221B0F01B00027DAC /* ZLChatFlowMessageStackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZLChatFlowMessageStackView.xib; sourceTree = "<group>"; };
+		CDA2FB6321B0F01B00027DAC /* ZLChatFlowProgressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZLChatFlowProgressView.xib; sourceTree = "<group>"; };
+		CDA2FB6421B0F01B00027DAC /* ZLChatFlowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLChatFlowVC.swift; sourceTree = "<group>"; };
+		CDA2FB6521B0F01B00027DAC /* ZLChatFlowParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLChatFlowParameters.swift; sourceTree = "<group>"; };
+		CDA2FB6621B0F01C00027DAC /* ZLChatFlowVC+State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZLChatFlowVC+State.swift"; sourceTree = "<group>"; };
+		CDA2FB6721B0F01C00027DAC /* ZLChatInfoMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLChatInfoMessageView.swift; sourceTree = "<group>"; };
+		CDA2FB6821B0F01C00027DAC /* ZLChatNumberEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLChatNumberEditorView.swift; sourceTree = "<group>"; };
+		CDA2FB6921B0F01C00027DAC /* ZLChatNumberEditorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZLChatNumberEditorView.xib; sourceTree = "<group>"; };
+		CDA2FB6A21B0F01C00027DAC /* ZLChatFlowProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLChatFlowProgressView.swift; sourceTree = "<group>"; };
+		CDA2FB6B21B0F01C00027DAC /* ZLChatFlowMessageStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLChatFlowMessageStackView.swift; sourceTree = "<group>"; };
+		CDA2FB6C21B0F01C00027DAC /* ZLChatStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLChatStackView.swift; sourceTree = "<group>"; };
+		CDA2FB7B21B0F54000027DAC /* UIStackView+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Utilities.swift"; sourceTree = "<group>"; };
+		CDA2FB7D21B0F56100027DAC /* UIView+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utilities.swift"; sourceTree = "<group>"; };
+		CDA2FB7F21B0F5CB00027DAC /* GeneralUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralUtilities.swift; sourceTree = "<group>"; };
+		CDA2FB8121B0F67C00027DAC /* Sequence+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Utilities.swift"; sourceTree = "<group>"; };
+		CDA2FB8421B0F6E700027DAC /* ZLFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLFont.swift; sourceTree = "<group>"; };
+		CDA2FB8621B0F6F600027DAC /* ZLColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLColor.swift; sourceTree = "<group>"; };
+		CDA2FB8921B0F75300027DAC /* ZLStringEditor+Presets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ZLStringEditor+Presets.swift"; sourceTree = "<group>"; };
+		CDA2FB8A21B0F75300027DAC /* ZLNumberEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLNumberEditor.swift; sourceTree = "<group>"; };
+		CDA2FB8D21B0F75300027DAC /* ZLStringEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLStringEditor.swift; sourceTree = "<group>"; };
+		CDA2FB9321B0F7E600027DAC /* ChatFlow-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChatFlow-Bridging-Header.h"; sourceTree = "<group>"; };
+		CDA2FB9421B0F7E600027DAC /* UIView+Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Helper.h"; sourceTree = "<group>"; };
+		CDA2FB9521B0F7E600027DAC /* UIView+Helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Helper.m"; sourceTree = "<group>"; };
+		CDA2FB9721B0F84200027DAC /* main.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.pch; sourceTree = "<group>"; };
+		CDA2FB9821B0F8F100027DAC /* NSString+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Helper.h"; sourceTree = "<group>"; };
+		CDA2FB9921B0F8F100027DAC /* NSString+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Helper.m"; sourceTree = "<group>"; };
+		F317578821B35D38001025EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F317578B21B35E39001025EE /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		F317578C21B35E39001025EE /* OpenSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		F317578D21B35E39001025EE /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F317578E21B35E39001025EE /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		F317578F21B35E39001025EE /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		F317579021B35E39001025EE /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		F317579121B35E39001025EE /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		F317579921B35EC2001025EE /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		F36C81CF21B1F66E00C50451 /* CGGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGGeometry.m; sourceTree = "<group>"; };
+		F36C81D021B1F66E00C50451 /* CGGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGGeometry.h; sourceTree = "<group>"; };
+		F36C81D221B1FA8900C50451 /* NSObject+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Helper.m"; sourceTree = "<group>"; };
+		F36C81D321B1FA8900C50451 /* NSObject+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Helper.h"; sourceTree = "<group>"; };
+		F36C81D621B1FB7200C50451 /* TargetActionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetActionHandler.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDA2FB4A21B0EFF200027DAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3571B0CF7EC1BD59B825605E /* Pods_ChatFlow.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03AB7BE8522AEE0A1C80D57B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20A3A7E8015FCD0E5B3C8C02 /* Pods_ChatFlow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C50B0C341B7E94F427673A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A27BF89869C3742F354612E /* Pods-ChatFlow.debug.xcconfig */,
+				06DCA643B6D93A20868C1A5D /* Pods-ChatFlow.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD7610CA21B1DE1300A3A2EF /* General */ = {
+			isa = PBXGroup;
+			children = (
+				CD76112D21B1E8B100A3A2EF /* ZLAccessoryView.swift */,
+				CD76111021B1E54900A3A2EF /* ZLButton.h */,
+				CD76110F21B1E54900A3A2EF /* ZLButton.m */,
+				CD76112F21B1E8F300A3A2EF /* ZLButton.swift */,
+				CD76110D21B1E53600A3A2EF /* ZLProminentButton.swift */,
+				CD76110121B1E3BC00A3A2EF /* ZLConstants.swift */,
+				CD76113421B1E97B00A3A2EF /* ZLConstants.h */,
+				CD76113521B1E97B00A3A2EF /* ZLConstants.m */,
+				CD7610CC21B1DE2200A3A2EF /* ZLNavBarStyle.swift */,
+				CD7610CD21B1DE2200A3A2EF /* ZLNavigationController.swift */,
+				CD7610CB21B1DE2200A3A2EF /* ZLViewController.swift */,
+				CD7610D521B1DF1800A3A2EF /* ZLLabel.h */,
+				CD7610D621B1DF1800A3A2EF /* ZLLabel.m */,
+				CD7610D721B1DF1800A3A2EF /* ZLLabel.swift */,
+				CD76111C21B1E7A300A3A2EF /* ZLGradientView.swift */,
+				CD76110A21B1E4A800A3A2EF /* ZLAdventureProgressView.swift */,
+				CD76110921B1E4A800A3A2EF /* ZLAdventureProgressView.xib */,
+				CD76110521B1E49700A3A2EF /* ZLOnboardingProgressView.swift */,
+				CD76110621B1E49700A3A2EF /* ZLOnboardingProgressView.xib */,
+			);
+			name = General;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CD7610DA21B1DF1E00A3A2EF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CDA2FB8321B0F6D600027DAC /* Style */,
+				CD7610CA21B1DE1300A3A2EF /* General */,
+				CDA2FB8821B0F74600027DAC /* String Editor */,
+				CD7610E321B1E01100A3A2EF /* Legacy */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CD7610E321B1E01100A3A2EF /* Legacy */ = {
+			isa = PBXGroup;
+			children = (
+				CD7610E421B1E01C00A3A2EF /* ZLDismissalInputAccessory.h */,
+				CD7610E521B1E01C00A3A2EF /* ZLDismissalInputAccessory.m */,
+				CD7610E621B1E01C00A3A2EF /* ZLDismissalInputAccessory.xib */,
+			);
+			path = Legacy;
+			sourceTree = "<group>";
+		};
+		CD7610EB21B1E1A800A3A2EF /* Model Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CD7610EE21B1E1C000A3A2EF /* Dictionary+Utilities.swift */,
+				CD7610F521B1E1C100A3A2EF /* Environment.swift */,
+				CD7610F621B1E1C100A3A2EF /* GlobalUtilities.swift */,
+				CD7610F421B1E1C100A3A2EF /* JSONValue.swift */,
+				CD7610F221B1E1C000A3A2EF /* KeyPath.swift */,
+			);
+			name = "Model Utilities";
+			sourceTree = "<group>";
+		};
+		CDA2FB4421B0EFF200027DAC = {
+			isa = PBXGroup;
+			children = (
+				CDA2FB4F21B0EFF200027DAC /* ChatFlow */,
+				CDA2FB4E21B0EFF200027DAC /* Products */,
+				5C50B0C341B7E94F427673A4 /* Pods */,
+				03AB7BE8522AEE0A1C80D57B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CDA2FB4E21B0EFF200027DAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDA2FB4D21B0EFF200027DAC /* ChatFlow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDA2FB4F21B0EFF200027DAC /* ChatFlow */ = {
+			isa = PBXGroup;
+			children = (
+				CDA2FB5021B0EFF200027DAC /* AppDelegate.swift */,
+				F317578821B35D38001025EE /* ViewController.swift */,
+				CDA2FB5221B0EFF200027DAC /* ZLSampleChatFlowVC.swift */,
+				CDA2FB5421B0EFF200027DAC /* Main.storyboard */,
+				CDA2FB5721B0EFF300027DAC /* Assets.xcassets */,
+				CDA2FB5921B0EFF300027DAC /* LaunchScreen.storyboard */,
+				CDA2FB5C21B0EFF300027DAC /* Info.plist */,
+				CDA2FB9321B0F7E600027DAC /* ChatFlow-Bridging-Header.h */,
+				CDA2FB9721B0F84200027DAC /* main.pch */,
+				F317578A21B35E20001025EE /* Resources */,
+				CDA2FB7921B0F4B600027DAC /* Utilities */,
+				CD7610DA21B1DF1E00A3A2EF /* Components */,
+				CDA2FB7A21B0F4C400027DAC /* Chat Flow */,
+			);
+			path = ChatFlow;
+			sourceTree = "<group>";
+		};
+		CDA2FB7921B0F4B600027DAC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F36C81D521B1FB6700C50451 /* Observers */,
+				F36C81CE21B1F65C00C50451 /* Core Graphics */,
+				CD7610EB21B1E1A800A3A2EF /* Model Utilities */,
+				CDA2FB7F21B0F5CB00027DAC /* GeneralUtilities.swift */,
+				CD7610D121B1DE4D00A3A2EF /* ObserverCollection.swift */,
+				CD76112921B1E88400A3A2EF /* Observers.swift */,
+				CD76112B21B1E89800A3A2EF /* Event.swift */,
+				CD76112721B1E85100A3A2EF /* KeyboardObserver.swift */,
+				CDA2FB8121B0F67C00027DAC /* Sequence+Utilities.swift */,
+				CD7610DB21B1DF7600A3A2EF /* Comparable+Utilities.swift */,
+				CD7610DC21B1DF7600A3A2EF /* Geometry.swift */,
+				CD7610DD21B1DF7600A3A2EF /* Math.swift */,
+				CDA2FB7B21B0F54000027DAC /* UIStackView+Utilities.swift */,
+				CD7610D321B1DECA00A3A2EF /* UIDevice+Utilities.swift */,
+				F36C81D321B1FA8900C50451 /* NSObject+Helper.h */,
+				F36C81D221B1FA8900C50451 /* NSObject+Helper.m */,
+				CD76112521B1E83400A3A2EF /* NSObject+Helper.swift */,
+				CD76111521B1E5D800A3A2EF /* GlobalFunctions.swift */,
+				CD76111A21B1E71900A3A2EF /* ZLGlobalFunctions.h */,
+				CD76111921B1E71800A3A2EF /* ZLGlobalFunctions.m */,
+				CDA2FB7D21B0F56100027DAC /* UIView+Utilities.swift */,
+				CD76111721B1E69500A3A2EF /* NSLayoutConstraint+Utilities.swift */,
+				CD76112221B1E80700A3A2EF /* UIResponder+Utilities.h */,
+				CD76112321B1E80700A3A2EF /* UIResponder+Utilities.m */,
+				CD76112021B1E7E500A3A2EF /* UIResponder+Utilities.swift */,
+				CD76111E21B1E7B500A3A2EF /* UIView+Constraints.swift */,
+				CDA2FB9421B0F7E600027DAC /* UIView+Helper.h */,
+				CDA2FB9521B0F7E600027DAC /* UIView+Helper.m */,
+				CD76110321B1E40400A3A2EF /* UIView+IBInspectables.swift */,
+				CDA2FB9821B0F8F100027DAC /* NSString+Helper.h */,
+				CDA2FB9921B0F8F100027DAC /* NSString+Helper.m */,
+				CD7610E921B1E06500A3A2EF /* String+Helper.swift */,
+				CD76113221B1E91900A3A2EF /* UIViewController+Helper.h */,
+				CD76113121B1E91800A3A2EF /* UIViewController+Helper.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		CDA2FB7A21B0F4C400027DAC /* Chat Flow */ = {
+			isa = PBXGroup;
+			children = (
+				CDA2FB6B21B0F01C00027DAC /* ZLChatFlowMessageStackView.swift */,
+				CDA2FB6221B0F01B00027DAC /* ZLChatFlowMessageStackView.xib */,
+				CDA2FB6521B0F01B00027DAC /* ZLChatFlowParameters.swift */,
+				CDA2FB6A21B0F01C00027DAC /* ZLChatFlowProgressView.swift */,
+				CDA2FB6321B0F01B00027DAC /* ZLChatFlowProgressView.xib */,
+				CDA2FB6421B0F01B00027DAC /* ZLChatFlowVC.swift */,
+				CDA2FB6621B0F01C00027DAC /* ZLChatFlowVC+State.swift */,
+				CDA2FB6721B0F01C00027DAC /* ZLChatInfoMessageView.swift */,
+				CDA2FB6821B0F01C00027DAC /* ZLChatNumberEditorView.swift */,
+				CDA2FB6921B0F01C00027DAC /* ZLChatNumberEditorView.xib */,
+				CDA2FB6C21B0F01C00027DAC /* ZLChatStackView.swift */,
+			);
+			name = "Chat Flow";
+			sourceTree = "<group>";
+		};
+		CDA2FB8321B0F6D600027DAC /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				CDA2FB8421B0F6E700027DAC /* ZLFont.swift */,
+				CDA2FB8621B0F6F600027DAC /* ZLColor.swift */,
+			);
+			name = Style;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CDA2FB8821B0F74600027DAC /* String Editor */ = {
+			isa = PBXGroup;
+			children = (
+				CDA2FB8A21B0F75300027DAC /* ZLNumberEditor.swift */,
+				CDA2FB8D21B0F75300027DAC /* ZLStringEditor.swift */,
+				CDA2FB8921B0F75300027DAC /* ZLStringEditor+Presets.swift */,
+			);
+			name = "String Editor";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F317578A21B35E20001025EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F317579921B35EC2001025EE /* OpenSans-Bold.ttf */,
+				F317578D21B35E39001025EE /* OpenSans-BoldItalic.ttf */,
+				F317578F21B35E39001025EE /* OpenSans-ExtraBoldItalic.ttf */,
+				F317578B21B35E39001025EE /* OpenSans-Italic.ttf */,
+				F317579021B35E39001025EE /* OpenSans-LightItalic.ttf */,
+				F317578E21B35E39001025EE /* OpenSans-Regular.ttf */,
+				F317579121B35E39001025EE /* OpenSans-SemiBold.ttf */,
+				F317578C21B35E39001025EE /* OpenSans-SemiBoldItalic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F36C81CE21B1F65C00C50451 /* Core Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				F36C81D021B1F66E00C50451 /* CGGeometry.h */,
+				F36C81CF21B1F66E00C50451 /* CGGeometry.m */,
+			);
+			name = "Core Graphics";
+			sourceTree = "<group>";
+		};
+		F36C81D521B1FB6700C50451 /* Observers */ = {
+			isa = PBXGroup;
+			children = (
+				F36C81D621B1FB7200C50451 /* TargetActionHandler.swift */,
+			);
+			name = Observers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDA2FB4C21B0EFF200027DAC /* ChatFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDA2FB5F21B0EFF300027DAC /* Build configuration list for PBXNativeTarget "ChatFlow" */;
+			buildPhases = (
+				55ABAFF5817AE34F995FA440 /* [CP] Check Pods Manifest.lock */,
+				CDA2FB4921B0EFF200027DAC /* Sources */,
+				CDA2FB4A21B0EFF200027DAC /* Frameworks */,
+				CDA2FB4B21B0EFF200027DAC /* Resources */,
+				A50DA8580260764040BE440B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChatFlow;
+			productName = ChatFlow;
+			productReference = CDA2FB4D21B0EFF200027DAC /* ChatFlow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDA2FB4521B0EFF200027DAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Patrick Pijnappel";
+				TargetAttributes = {
+					CDA2FB4C21B0EFF200027DAC = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = CDA2FB4821B0EFF200027DAC /* Build configuration list for PBXProject "ChatFlow" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDA2FB4421B0EFF200027DAC;
+			productRefGroup = CDA2FB4E21B0EFF200027DAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDA2FB4C21B0EFF200027DAC /* ChatFlow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDA2FB4B21B0EFF200027DAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDA2FB7421B0F01C00027DAC /* ZLChatNumberEditorView.xib in Resources */,
+				F317579621B35E39001025EE /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				CD76110B21B1E4A900A3A2EF /* ZLAdventureProgressView.xib in Resources */,
+				F317579A21B35EC2001025EE /* OpenSans-Bold.ttf in Resources */,
+				CDA2FB6E21B0F01C00027DAC /* ZLChatFlowProgressView.xib in Resources */,
+				F317579821B35E39001025EE /* OpenSans-SemiBold.ttf in Resources */,
+				F317579221B35E39001025EE /* OpenSans-Italic.ttf in Resources */,
+				CDA2FB5B21B0EFF300027DAC /* LaunchScreen.storyboard in Resources */,
+				CDA2FB5821B0EFF300027DAC /* Assets.xcassets in Resources */,
+				F317579421B35E39001025EE /* OpenSans-BoldItalic.ttf in Resources */,
+				CDA2FB5621B0EFF200027DAC /* Main.storyboard in Resources */,
+				CDA2FB6D21B0F01C00027DAC /* ZLChatFlowMessageStackView.xib in Resources */,
+				F317579321B35E39001025EE /* OpenSans-SemiBoldItalic.ttf in Resources */,
+				CD76110821B1E49700A3A2EF /* ZLOnboardingProgressView.xib in Resources */,
+				F317579521B35E39001025EE /* OpenSans-Regular.ttf in Resources */,
+				CD7610E821B1E01C00A3A2EF /* ZLDismissalInputAccessory.xib in Resources */,
+				F317579721B35E39001025EE /* OpenSans-LightItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55ABAFF5817AE34F995FA440 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatFlow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A50DA8580260764040BE440B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ChatFlow/Pods-ChatFlow-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChatFlow/Pods-ChatFlow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDA2FB4921B0EFF200027DAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD7610D421B1DECA00A3A2EF /* UIDevice+Utilities.swift in Sources */,
+				CD7610F821B1E1C100A3A2EF /* Dictionary+Utilities.swift in Sources */,
+				CD76110E21B1E53600A3A2EF /* ZLProminentButton.swift in Sources */,
+				CD76112821B1E85100A3A2EF /* KeyboardObserver.swift in Sources */,
+				CDA2FB7621B0F01C00027DAC /* ZLChatFlowMessageStackView.swift in Sources */,
+				F36C81D121B1F66E00C50451 /* CGGeometry.m in Sources */,
+				CD76110221B1E3BC00A3A2EF /* ZLConstants.swift in Sources */,
+				CD7610E021B1DF7600A3A2EF /* Math.swift in Sources */,
+				CDA2FB7C21B0F54000027DAC /* UIStackView+Utilities.swift in Sources */,
+				CD76112621B1E83400A3A2EF /* NSObject+Helper.swift in Sources */,
+				CD76112121B1E7E500A3A2EF /* UIResponder+Utilities.swift in Sources */,
+				CD76112421B1E80700A3A2EF /* UIResponder+Utilities.m in Sources */,
+				CDA2FB5321B0EFF200027DAC /* ZLSampleChatFlowVC.swift in Sources */,
+				CDA2FB8221B0F67C00027DAC /* Sequence+Utilities.swift in Sources */,
+				CD76110C21B1E4A900A3A2EF /* ZLAdventureProgressView.swift in Sources */,
+				CDA2FB5121B0EFF200027DAC /* AppDelegate.swift in Sources */,
+				CDA2FB9221B0F75300027DAC /* ZLStringEditor.swift in Sources */,
+				CD76113321B1E91900A3A2EF /* UIViewController+Helper.m in Sources */,
+				CD7610CE21B1DE2200A3A2EF /* ZLViewController.swift in Sources */,
+				CD7610EA21B1E06500A3A2EF /* String+Helper.swift in Sources */,
+				CD7610DE21B1DF7600A3A2EF /* Comparable+Utilities.swift in Sources */,
+				CDA2FB8521B0F6E700027DAC /* ZLFont.swift in Sources */,
+				CD76110021B1E1C100A3A2EF /* GlobalUtilities.swift in Sources */,
+				CD76112A21B1E88400A3A2EF /* Observers.swift in Sources */,
+				CDA2FB8021B0F5CB00027DAC /* GeneralUtilities.swift in Sources */,
+				CDA2FB9621B0F7E600027DAC /* UIView+Helper.m in Sources */,
+				CDA2FB7221B0F01C00027DAC /* ZLChatInfoMessageView.swift in Sources */,
+				F36C81D721B1FB7200C50451 /* TargetActionHandler.swift in Sources */,
+				CD76111821B1E69500A3A2EF /* NSLayoutConstraint+Utilities.swift in Sources */,
+				CD7610D221B1DE4D00A3A2EF /* ObserverCollection.swift in Sources */,
+				CDA2FB7E21B0F56100027DAC /* UIView+Utilities.swift in Sources */,
+				CD76111621B1E5D800A3A2EF /* GlobalFunctions.swift in Sources */,
+				CD76112E21B1E8B100A3A2EF /* ZLAccessoryView.swift in Sources */,
+				CD7610D021B1DE2200A3A2EF /* ZLNavigationController.swift in Sources */,
+				CD7610FC21B1E1C100A3A2EF /* KeyPath.swift in Sources */,
+				CD76113021B1E8F300A3A2EF /* ZLButton.swift in Sources */,
+				CDA2FB7121B0F01C00027DAC /* ZLChatFlowVC+State.swift in Sources */,
+				CDA2FB6F21B0F01C00027DAC /* ZLChatFlowVC.swift in Sources */,
+				CD76113621B1E97B00A3A2EF /* ZLConstants.m in Sources */,
+				F317578921B35D38001025EE /* ViewController.swift in Sources */,
+				CD76111B21B1E71900A3A2EF /* ZLGlobalFunctions.m in Sources */,
+				CD76112C21B1E89800A3A2EF /* Event.swift in Sources */,
+				CD76111121B1E54A00A3A2EF /* ZLButton.m in Sources */,
+				CD7610D921B1DF1800A3A2EF /* ZLLabel.swift in Sources */,
+				CD76111F21B1E7B500A3A2EF /* UIView+Constraints.swift in Sources */,
+				CD7610E721B1E01C00A3A2EF /* ZLDismissalInputAccessory.m in Sources */,
+				CDA2FB9A21B0F8F100027DAC /* NSString+Helper.m in Sources */,
+				CD7610FF21B1E1C100A3A2EF /* Environment.swift in Sources */,
+				CD7610DF21B1DF7600A3A2EF /* Geometry.swift in Sources */,
+				CDA2FB8F21B0F75300027DAC /* ZLNumberEditor.swift in Sources */,
+				CDA2FB8E21B0F75300027DAC /* ZLStringEditor+Presets.swift in Sources */,
+				CD7610FE21B1E1C100A3A2EF /* JSONValue.swift in Sources */,
+				CDA2FB7521B0F01C00027DAC /* ZLChatFlowProgressView.swift in Sources */,
+				CD7610D821B1DF1800A3A2EF /* ZLLabel.m in Sources */,
+				CD7610CF21B1DE2200A3A2EF /* ZLNavBarStyle.swift in Sources */,
+				CDA2FB7021B0F01C00027DAC /* ZLChatFlowParameters.swift in Sources */,
+				CDA2FB8721B0F6F600027DAC /* ZLColor.swift in Sources */,
+				F36C81D421B1FA8900C50451 /* NSObject+Helper.m in Sources */,
+				CDA2FB7321B0F01C00027DAC /* ZLChatNumberEditorView.swift in Sources */,
+				CD76110721B1E49700A3A2EF /* ZLOnboardingProgressView.swift in Sources */,
+				CDA2FB7721B0F01C00027DAC /* ZLChatStackView.swift in Sources */,
+				CD76111D21B1E7A300A3A2EF /* ZLGradientView.swift in Sources */,
+				CD76110421B1E40400A3A2EF /* UIView+IBInspectables.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CDA2FB5421B0EFF200027DAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDA2FB5521B0EFF200027DAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CDA2FB5921B0EFF300027DAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDA2FB5A21B0EFF300027DAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDA2FB5D21B0EFF300027DAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CDA2FB5E21B0EFF300027DAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDA2FB6021B0EFF300027DAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A27BF89869C3742F354612E /* Pods-ChatFlow.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T55GAY3536;
+				GCC_PREFIX_HEADER = "$(TARGET_NAME)/main.pch";
+				INFOPLIST_FILE = ChatFlow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.patrickpijnappel.ChatFlow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChatFlow/ChatFlow-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CDA2FB6121B0EFF300027DAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06DCA643B6D93A20868C1A5D /* Pods-ChatFlow.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T55GAY3536;
+				GCC_PREFIX_HEADER = "$(TARGET_NAME)/main.pch";
+				INFOPLIST_FILE = ChatFlow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.patrickpijnappel.ChatFlow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ChatFlow/ChatFlow-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDA2FB4821B0EFF200027DAC /* Build configuration list for PBXProject "ChatFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDA2FB5D21B0EFF300027DAC /* Debug */,
+				CDA2FB5E21B0EFF300027DAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDA2FB5F21B0EFF300027DAC /* Build configuration list for PBXNativeTarget "ChatFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDA2FB6021B0EFF300027DAC /* Debug */,
+				CDA2FB6121B0EFF300027DAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDA2FB4521B0EFF200027DAC /* Project object */;
+}

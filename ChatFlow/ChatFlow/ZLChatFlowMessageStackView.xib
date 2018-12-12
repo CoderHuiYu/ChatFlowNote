@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularStd-Book.otf">
+            <string>CircularStd-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ole-qj-XJb" customClass="ZLChatFlowMessageStackView" customModule="Tellus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="109"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar-zilly-ama-blue" translatesAutoresizingMaskIntoConstraints="NO" id="eAA-0h-IgM">
+                    <rect key="frame" x="16" y="8" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="lgA-3p-d8C"/>
+                        <constraint firstAttribute="width" constant="32" id="uUy-Sr-yNm"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WZd-LB-bwa">
+                    <rect key="frame" x="56" y="26" width="265" height="75"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </stackView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navbar-info-blue" translatesAutoresizingMaskIntoConstraints="NO" id="2eg-R8-UZR">
+                    <rect key="frame" x="329" y="52" width="23" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="BE8-sW-QwZ"/>
+                        <constraint firstAttribute="width" constant="23" id="cdh-Sz-NqB"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmZ-57-bpg">
+                    <rect key="frame" x="321" y="38.5" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="3sC-54-8eW"/>
+                        <constraint firstAttribute="width" constant="50" id="t4O-m0-MbH"/>
+                    </constraints>
+                    <connections>
+                        <action selector="infoButtonPressedAction:" destination="ole-qj-XJb" eventType="touchUpInside" id="wyW-ce-OVt"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Zilly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ra4-Rn-b1y" customClass="ZLLabel">
+                    <rect key="frame" x="56" y="8" width="23" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="990" constant="16" id="5Ej-Xf-45J"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="10"/>
+                    <color key="textColor" red="0.35294117650000001" green="0.35294117650000001" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gmZ-57-bpg" firstAttribute="centerY" secondItem="2eg-R8-UZR" secondAttribute="centerY" id="1dS-5B-Dur"/>
+                <constraint firstAttribute="bottom" secondItem="WZd-LB-bwa" secondAttribute="bottom" priority="100" constant="8" id="AL7-zr-ttb"/>
+                <constraint firstItem="Ra4-Rn-b1y" firstAttribute="top" secondItem="eAA-0h-IgM" secondAttribute="top" id="AQd-KQ-JTP"/>
+                <constraint firstItem="gmZ-57-bpg" firstAttribute="leading" secondItem="WZd-LB-bwa" secondAttribute="trailing" id="K5t-Q0-J3b"/>
+                <constraint firstItem="WZd-LB-bwa" firstAttribute="leading" secondItem="Ra4-Rn-b1y" secondAttribute="leading" id="RYr-b8-PP4"/>
+                <constraint firstAttribute="trailing" secondItem="WZd-LB-bwa" secondAttribute="trailing" priority="990" constant="54" id="YBC-IT-HPU"/>
+                <constraint firstItem="eAA-0h-IgM" firstAttribute="top" secondItem="ole-qj-XJb" secondAttribute="top" priority="990" constant="8" id="dmf-mQ-IpP"/>
+                <constraint firstItem="2eg-R8-UZR" firstAttribute="centerY" secondItem="WZd-LB-bwa" secondAttribute="centerY" id="gLD-wh-W8D"/>
+                <constraint firstItem="WZd-LB-bwa" firstAttribute="leading" secondItem="eAA-0h-IgM" secondAttribute="trailing" priority="990" constant="8" id="j8K-jh-wYc"/>
+                <constraint firstItem="eAA-0h-IgM" firstAttribute="leading" secondItem="ole-qj-XJb" secondAttribute="leading" priority="990" constant="16" id="n7k-J4-mrD"/>
+                <constraint firstItem="2eg-R8-UZR" firstAttribute="leading" secondItem="WZd-LB-bwa" secondAttribute="trailing" constant="8" id="szN-eM-yC8"/>
+                <constraint firstItem="WZd-LB-bwa" firstAttribute="top" secondItem="Ra4-Rn-b1y" secondAttribute="bottom" constant="2" id="xrS-YV-lFg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="avatarImageView" destination="eAA-0h-IgM" id="9cH-Fd-Zdf"/>
+                <outlet property="avatarLeftConstraint" destination="n7k-J4-mrD" id="eXG-Gk-DG2"/>
+                <outlet property="avatarRightConstraint" destination="j8K-jh-wYc" id="ACf-Vy-Ubr"/>
+                <outlet property="avatarTopConstraint" destination="dmf-mQ-IpP" id="YJJ-A6-YH2"/>
+                <outlet property="avatarWidthConstraint" destination="uUy-Sr-yNm" id="9OA-1t-5Fb"/>
+                <outlet property="chatMessageStackView" destination="WZd-LB-bwa" id="Uyi-PT-1da"/>
+                <outlet property="chatMessageStackViewBottomConstraint" destination="AL7-zr-ttb" id="QNl-ax-61c"/>
+                <outlet property="chatMessageStackViewRightConstraint" destination="YBC-IT-HPU" id="tUE-6b-5FE"/>
+                <outlet property="infoButton" destination="gmZ-57-bpg" id="Xkw-MB-mBq"/>
+                <outlet property="infoIconImageView" destination="2eg-R8-UZR" id="ciI-r5-IMf"/>
+                <outlet property="senderNameLabel" destination="Ra4-Rn-b1y" id="IdC-1g-R3V"/>
+                <outlet property="senderNameLabelBottomConstraint" destination="xrS-YV-lFg" id="6d3-Vk-Dnq"/>
+                <outlet property="senderNameLabelHeightConstraint" destination="5Ej-Xf-45J" id="XfO-68-QAf"/>
+            </connections>
+            <point key="canvasLocation" x="-55.5" y="-387.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="avatar-zilly-ama-blue" width="32" height="32"/>
+        <image name="navbar-info-blue" width="24" height="24"/>
+    </resources>
+</document>
